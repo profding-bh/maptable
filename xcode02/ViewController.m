@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "StatusMessageHandle.h"
+#import "MessageView.h"
+
 
 @interface ViewController ()
+
+@property (nonatomic,strong) UIWindow *tatusWindow;
 
 @end
 
@@ -16,7 +21,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self performSelector:@selector(showMessageEvent) withObject:nil afterDelay:5.f];
+}
+
+- (void)showMessageEvent{
+    [StatusMessageHandle showAndHideDuration:2.0f];
+    
+    [StatusMessageHandle showWithView:[MessageView messageViewWithTitle:@"dingguiqiang" backgroundColor:[UIColor whiteColor]] hideAfterSeconds:3.f];
 }
 
 - (void)didReceiveMemoryWarning {

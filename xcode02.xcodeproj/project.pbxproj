@@ -15,6 +15,8 @@
 		C46295001C0949AE008716CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46294FE1C0949AE008716CA /* LaunchScreen.storyboard */; };
 		C462950B1C0949AE008716CA /* xcode02Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C462950A1C0949AE008716CA /* xcode02Tests.m */; };
 		C46295161C0949AE008716CA /* xcode02UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C46295151C0949AE008716CA /* xcode02UITests.m */; };
+		C46295251C0949FF008716CA /* MessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C46295241C0949FF008716CA /* MessageView.m */; };
+		C46295291C094A1B008716CA /* StatusMessageHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = C46295271C094A1B008716CA /* StatusMessageHandle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		C46295111C0949AE008716CA /* xcode02UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xcode02UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46295151C0949AE008716CA /* xcode02UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xcode02UITests.m; sourceTree = "<group>"; };
 		C46295171C0949AE008716CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C46295231C0949FF008716CA /* MessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageView.h; sourceTree = "<group>"; };
+		C46295241C0949FF008716CA /* MessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageView.m; sourceTree = "<group>"; };
+		C46295261C094A1B008716CA /* StatusMessageHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMessageHandle.h; sourceTree = "<group>"; };
+		C46295271C094A1B008716CA /* StatusMessageHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusMessageHandle.m; sourceTree = "<group>"; };
+		C46295281C094A1B008716CA /* StatusMessageProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMessageProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +111,11 @@
 				C46294F31C0949AE008716CA /* AppDelegate.h */,
 				C46294F41C0949AE008716CA /* AppDelegate.m */,
 				C46294F61C0949AE008716CA /* ViewController.h */,
+				C46295261C094A1B008716CA /* StatusMessageHandle.h */,
+				C46295271C094A1B008716CA /* StatusMessageHandle.m */,
+				C46295281C094A1B008716CA /* StatusMessageProtocol.h */,
+				C46295231C0949FF008716CA /* MessageView.h */,
+				C46295241C0949FF008716CA /* MessageView.m */,
 				C46294F71C0949AE008716CA /* ViewController.m */,
 				C46294F91C0949AE008716CA /* Main.storyboard */,
 				C46294FC1C0949AE008716CA /* Assets.xcassets */,
@@ -273,6 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46295291C094A1B008716CA /* StatusMessageHandle.m in Sources */,
+				C46295251C0949FF008716CA /* MessageView.m in Sources */,
 				C46294F81C0949AE008716CA /* ViewController.m in Sources */,
 				C46294F51C0949AE008716CA /* AppDelegate.m in Sources */,
 				C46294F21C0949AE008716CA /* main.m in Sources */,
